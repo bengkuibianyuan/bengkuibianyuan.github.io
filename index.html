@@ -7,42 +7,429 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         div{
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* background-image: url("./9/img/鸭子摇、.gif"); */
+            background-image: url("9/img/红衣.jpg");
+            background-size: 100% 100%;
+            width: 100%;
+            height: 2000px;
+
+        }
+
+        .box {
             border: 1px solid black;
-            background-color: #ccc;
+            background-color: rgba(0, 0, 0, .3);
             width: 1200px;
-            height: 1000px;
-            margin: 0 auto;
-         }
-         .box h1{
+            height: 2500px;
+            margin: 0px auto 0 auto;
+            border-radius: 25px;
+            display: none;
+        }
+
+        .box h1 {
             text-align: center;
+            color: rgb(134, 6, 6);
+            margin: 50px 0;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(227, 227, 227);
+        }
+
+        .box h2 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+        }
+
+        /* *****************8月******************** */
+        .box2 {
+            display: flex;
+            justify-content: space-around;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .box2 span {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .box2 dd {
+            letter-spacing: 10px;
+        }
+
+        /* *****************9月******************** */
+        .box3 {
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+
+        }
+
+        .box3 .wai {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* *****************9.1******************** */
+        .box3 .yi {
+            font-size: 25px;
+            margin-left: 30%;
+        }
+
+        .box3 .diyi {
+            width: 500px;
+        }
+
+        .box3 dd {
+            border-bottom: 1px solid #333;
+            padding: 10px 0;
+        }
+
+        .box3 dd a {
+            margin-left: 10px;
+        }
+
+        /* *****************9.2******************** */
+        .box3 .dier {
+            width: 500px;
+        }
+
+        /* *****************9.3******************** */
+        .box3 .disan {
+            width: 500px;
+        }
+
+        /* *****************9.4******************** */
+        .box3 .disi {
+            width: 500px;
+        }
+
+        /* *****************9.5******************** */
+        .box3 .diwu {
+            width: 500px;
+        }
+
+        /* *****************9.6******************** */
+        .box3 .diliu {
+            width: 500px;
+        }
+
+        /* *****************9.7******************** */
+        .box3 .diqi {
+            width: 500px;
+        }
+
+        /* *****************9.8******************** */
+        .box3 .diba {
+            width: 500px;
+        }
+
+        /* *****************9.9******************** */
+        .box3 .dijiu {
+            width: 500px;
+        }
+
+        /* *****************9.10******************** */
+        .box3 .dishi {
+            width: 500px;
+        }
+
+        /* *****************顶上的div******************** */
+        .weng h1 {
+            text-align: center;
+            font-size: 50px;
+            background-color: rgb(67, 135, 203);
+        }
+
+        .weng {
+            margin: 0px 0;
+            position: relative;
+            display: none;
+            height: 150px;
+            width: 100%;
+            line-height: 150px;
+            background-image: linear-gradient(to left,
+                rgb(152, 193, 234) 0%,
+                rgb(152, 193, 234) 10%,
+                rgb(67, 135, 203) 100%
+            );
+        }
+
+        .weng img {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 100px;
+            top: 20px;
+        }
+
+        /* *****************外面的框框******************** */
+        .xkk {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: 0 auto;
+            transform: translate(-50%, -50%);
+            color: rgb(31, 0, 6);
+            background-color: rgba(121, 53, 5, 0.4);
+            /* box-shadow: 6px 6px 1px 2px #ccc 1px; */
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border: 1px solid black;
+            /* display: none; */
+        }
+
+        .xkk p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .xkk h3 {
+            font-size: 25px;
+        }
+
+        .xkk .btn {
+            border-radius: 30px;
+            display: block;
+            width: 150px;
+            height: 50px;
+            border: none;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .xkk span {
+            margin-left: 250px;
+            font-size: 20px;
+        }
+
+        /* *****************结尾******************** */
+        .weibu {
+            width: 100%;
+            height: 200px;
+            background-color: rgba(0, 0, 0, .8);
+            color: beige;
+            margin-top: 0;
+            text-align: center;
+            line-height: 200px;
+            display: none;
+        }
+         /* *****************一键底部******************** */
+         .qdb{
+             border: 2px solid #ccc;
+             background-color: rgba(237, 224, 174,.3);
+             padding: 10px;
+             width: 70px;
+             height: 20px;
+             color: #333;
+             margin-left: 265px;
+         }
+         .qdb2{
+             border: 2px solid #ccc;
+             background-color: rgba(237, 224, 174,.3);
+             padding: 10px;
+             width: 70px;
+             height: 20px;
+             color: #333;
+             margin-left: 1000px;
+         }
+         .qdb:hover{
+            background-color: lightblue;
+         }
+         .qdb2:hover{
+            background-color: lightblue;
          }
     </style>
 </head>
 
 <body>
-   <div class="box">
-    <h1>被尘封的作业</h1>
-    <dl>
-        <dt>8月</dt>
-        <dd>作业1:钢琴块</dd>
-        <dd>作业2:绿色表单</dd>
-        <dd>作业三：小米商城</dd>
-        <dt>9月</dt>
-        <td>第一天</td>
-        <dd><a href="">弹窗恶作剧(window.alert())</a></dd>
-        <dd><a href="">下拉菜单(切换class属性值)</a></dd>
-        <dd><a href="">文章字号切换(切换class属性值)</a></dd>
-        <dd><a href="">文章样式切换(切换class属性值)</a></dd>
-        <dd><a href="">开关灯(切换src属性值)</a></dd>
-        <dd><a href="">开关按钮(切换class属性值)</a></dd>
-        <dd> <a href="">张三在北京 (读取value属性值)</a></dd>
-        <dd><a href="">当前菜单(切换class属性值)</a></dd>
-        <dd><a href="">选项卡(切换class属性值)</a></dd>
+    <div class="weng">
+        <h1 class="">上了贼船就要做个快乐的海盗！(✿◕‿◕✿)</h1>
+        <img src="./9/img/鸭子摇、.gif" alt="" id="img1">
+        <div class="wai">
+            <a name="top" href="#bottom" target="" class="qdb">一键底部</a>
+        </div>
+    </div>
+    <div class="box">
+        <h1>被尘封的作业</h1>
+        <dl>
+            <dt>
+                <h2>8月</h2>
+            </dt>
+            <div class="box2">
+                <dd><span><a href="">作业1:</span>钢琴块</a></dd>
+                <dd><span><a href="">作业2:</span>绿色表单</a></dd>
+                <dd><span><a href="">作业3:</span>小米商城</a></dd>
+            </div>
+            <div class="box3">
+                <dt>
+                    <h2>9月</h2>
+                </dt>
+                <div class="wai">
+                    <div class="diyi">
+                        <td><span class="yi">9.1操作属性</span></td>
+                        <dd><a href="./9/1-1弹窗恶作剧(window.alert()).html">弹窗恶作剧(window.alert())</a></dd>
+                        <dd><a href="./9/1-2下拉菜单(切换class属性值).html">下拉菜单(切换class属性值)</a></dd>
+                        <dd><a href="./9/1-3文章字号切换(切换class属性值).html">文章字号切换(切换class属性值)</a></dd>
+                        <dd><a href="./9/1-4文章样式切换(切换class属性值).html">文章样式切换(切换class属性值)</a></dd>
+                        <dd><a href="./9/1-5开关灯(切换src属性值).html">开关灯(切换src属性值)</a></dd>
+                        <dd><a href="./9/1-6开关按钮(切换class属性值).html">开关按钮(切换class属性值)</a></dd>
+                        <dd><a href="./9/1-7张三在北京 (读取value属性值).html">张三在北京 (读取value属性值)</a></dd>
+                        <dd><a href="./9/1-8当前菜单(切换class属性值).html">当前菜单(切换class属性值)</a></dd>
+                        <dd><a href="./9/1-9选项卡(切换class属性值).html">选项卡(切换class属性值)</a></dd>
+                    </div>
+                    <div class="dier">
+                        <td><span class="yi">9.2 操作样式</span></td>
+                        <dd><a href="./9/2-1百变盒子.html">
+                                百变盒子
+                            </a></dd>
+                        <dd><a href="./9/2-2文字字号控制.html">
+                                文字字号控制
+                            </a></dd>
+                    </div>
+                </div>
+                <div class="wai">
+                    <div class="disan">
+                        <td><span class="yi">9.3 操作内容</span></td>
+                        <dd><a href="./9/3-1聊天室.html">聊天室</a></dd>
+                        <dd><a href="./9/3-2微博.html">微博</a></dd>
+                        <dd><a href="./9/3-3坚果微信聊天.html">坚果微信聊天</a></dd>
+                        <dd><a href="./9/3-4华为微信聊天.html">华为微信聊天</a></dd>
+                    </div>
+                    <div class="disi">
+                        <td><span class="yi">9.4 if条件语句</span></td>
+                        <dd><a href="./9/4-1显示隐藏圆.html">显示隐藏圆</a></dd>
+                        <dd><a href="./9/4-2头像切换.html">头像切换</a></dd>
+                        <dd><a href="./9/4-3分数评语.html">分数评语</a></dd>
+                        <dd><a href="./9/4-4边界值.html">边界值</a></dd>
+                        <dd><a href="./9/4-5单模轮播图.html">单模轮播图</a></dd>
+                        <dd><a href="./9/4-6双模轮播图.html">双模轮播图</a></dd>
+                        <dd><a href="./9/4-7字号边界控制.html">字号边界控制</a></dd>
+                        <dd><a href="./9/4-8计数器.html">计数器</a></dd>
+                        <dd><a href="./9/4-9珠峰.html">珠峰</a></dd>
+                    </div>
+                </div>
+                <div class="wai">
+                    <div class="diwu">
+                        <td><span class="yi">9.5 for循环</span></td>
+                        <dd><a href="./9/5-1输出2000个button到页面.html">输出2000个button到页面</a></dd>
+                        <dd><a href="./9/5-2判断大小.html">判断大小</a></dd>
+                        <dd><a href="./9/5-3用法5事件.html">用法5事件</a></dd>
+                        <dd><a href="./9/5-4九九乘法表.html">九九乘法表</a></dd>
+                        <dd><a href="./9/5-5生成10个div.html">生成10个div</a></dd>
+                        <dd><a href="./9/5-6多彩div.html">多彩div</a></dd>
+                        <dd><a href="./9/5-7批量事件.html">批量事件</a></dd>
+                        <dd><a href="./9/5-8旋转的div.html">旋转的div</a></dd>
+                        <dd><a href="./9/5-9生成5条新闻.html">生成5条新闻</a></dd>
+                        <dd><a href='./9/5-10生成10个div.html'>生成10个div</a></dd>
+                        <dd><a href="./9/5-11生成100个div.html">生成100个div</a></dd>
+                        <dd><a href="./9/5-12照片蒙版.html">照片蒙版</a></dd>
+                        <dd><a href="./9/5-13珠峰.html">珠峰</a></dd>
+                    </div>
+                    <div class="diliu">
+                        <td><span class="yi">9.6 函数</span></td>
+                        <dd><a href="./9/6-1购物车PLUS.html">购物车PLUS</a></dd>
+                        <dd><a href="./9/6-2修改标题.html">修改标题</a></dd>
+                        <dd><a href="./9/6-3新浪体育轮播图.html">新浪体育轮播图</a></dd>
+                        <dd><a href="./9/6-4五星评价.html">五星评价</a></dd>
+                    </div>
+                </div>
+                <div class="wai">
+                    <div class="diqi">
+                        <td><span class="yi">9.7 自定义属性</span></td>
+                        <dd><a href="./9/7-1切换按钮背景色.html">切换按钮背景色</a></dd>
+                        <dd><a href="./9/7-2控制数字增长.html">控制数字增长</a></dd>
+                        <dd><a href="./9/7-3切换ABCD.html">切换ABCD</a></dd>
+                        <dd><a href="./9/7-4选择性别.html">选择性别</a></dd>
+                        <dd><a href="./9/7-5桌面图标.html">桌面图标</a></dd>
+                        <dd><a href="./9/7-6QQ列表.html">QQ列表</a></dd>
+                    </div>
+                    <div class="diba">
+                        <td><span class="yi">9.8 数据类型转换</span></td>
+                        <dd><a href="./9/8-1判断小数.html">判断小数</a></dd>
+                        <dd><a href="./9/8-2找数字.html">找数字</a></dd>
+                        <dd><a href="./9/8-3QQ号.html">QQ号</a></dd>
+                    </div>
+                </div>
+                <div class="wai">
+                    <div class="dijiu">
+                        <td><span class="yi">9.9 Math对象</span></td>
+                        <dd><a href="./9/10-1生成一个20个0-100之间的随机数输出到⻚面上.html">生成一个20个0-100之间的随机数输出到⻚面上</a></dd>
+                        <dd><a href="./9/9-1生成一个16进制的随机颜色.html">生成一个16进制的随机颜色</a></dd>
+                        <dd><a href="./9/9-2点击按钮自动切换⻚面背景图片.html">点击按钮自动切换⻚面背景图片</a></dd>
+                        <dd><a href="./9/9-3点击按钮自动切换⻚面背景色.html">点击按钮自动切换⻚面背景色</a></dd>
+                    </div>
+                    <div class="dishi">
+                        <td><span class="yi">9.10 Navigator对象</span></td>
+                        <dd><a href="./9/10-1检测浏览器.html">检测浏览器</a></dd>
+                    </div>
+                </div>
+                     <a name="bottom" href="#top" target="" class="qdb2">回到顶部</a>
+                    
+                
+            </div>
 
-
-    </dl>
-   </div>
+        </dl>
+    </div>
+    <div class="weibu">
+        https://github.com/bengkuibianyuan/bengkuibianyuan
+    </div>
+    <div class="xkk">
+        <span><a href="#">X</a></span>
+        <p>有的人吃饭</p>
+        <p>有的人睡觉刷视频</p>
+        <p>有的人凌晨两点半还打不完代码</p>
+        <h3>别读了！说的就是你。</h3>
+        <button class="btn">不要看我作业a！！</button>
+    </div>
+    <script>
+        //目标1：点击a让.weng和.box的style display: block;同时修改.xkk为 display: none。
+        //获取元素
+        var oDiv1 = document.querySelector(".weng")
+        var oDiv2 = document.querySelector(".box")
+        var oDiv3 = document.querySelector(".weibu")
+        var oDiv4 = document.querySelector(".xkk")
+        var oA = document.querySelector(".xkk a")
+        console.log(oA)
+        var oBtn = document.querySelector(".btn")
+        function fu1(){
+            oDiv1.style.display = " block"
+            oDiv2.style.display = " block"
+            oDiv3.style.display = " block"
+            oDiv4.style.display = " none"
+        }
+        oA.onclick = function () {
+            console.log(11)
+            fu1()
+            document.body.style.background = 'url("./9/img/万叶1.jpg")'
+            document.body.style.backgroundSize = '100% 2000px'
+            document.body.style.backgroundRepeat = 'no-repeat'
+            document.body.style.backgroundAttachment = 'fixed'
+        }
+        //目标2：点击.btn，弹出警示窗口“就不给你看哦吼吼。”
+        oBtn.onclick = function () {
+            oDiv4.style.display = " none"
+            alert("就不给你看哦吼吼!!!!")
+            document.body.style.background = 'url("./9/img/鸭子摇、.gif")'
+            document.body.innerHTML = "<h1>你不会生气了吧！</h1>"
+        }
+        //给外面的鸭子动起来,改变它的top和left值
+        //获取元素 
+        var oImg = document.querySelector("#img1")
+    </script>
 </body>
 
 </html>

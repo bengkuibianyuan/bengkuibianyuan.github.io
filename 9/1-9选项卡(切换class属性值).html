@@ -1,115 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>选项卡</title>
     <style>
-        .container {
-            height: 100px;
-            width: 300px;
-            border: 1px solid black;
+        body{
+            background-color: aliceblue;
+        }
+        .box{
+            width: 1200px;
+            height: 650px;
             margin: 0 auto;
-
+            overflow: hidden;
         }
-        .container .yi {
-            border-bottom: 1px solid black;
-            /* background-color: black; */
-            background-color: rgba(229, 182, 139, 0.667);
+        .h1{
+            text-align: center;
         }
-        .container .yi .b1,.b2,.b3{
-            background-color: antiquewhite;
+        .h2{
+            width: 1080px;
+            margin-left: 60px;
+            border-bottom: 2px solid #999;
         }
-        .container .yi a{
+        .h2 a{
             text-decoration: none;
-            color: black;
-            /* color: black; */
-
+            color: #000;
+            padding: 10px;
         }
-
-        .container .a1 {
-            width: 50px;
-            height: 20px;
-            border: 1px solid bisque;
+        .h3{
+            text-align: center;
+            float: left;
         }
-
-        .container #span1 {
-            display: block;
-        } 
-
-        .container #span2 {
-            display: none;
+        .h3 img{
+            margin: 10px;
         }
-
-        /* .container .a3 {
-            width: 50px;
-            height: 20px;
-            border: 1px solid bisque;
-        } */
-
-        .container #span3 {
-            display: none;
-        }
-        .xiam{
-            background-color: bisque;
-            height: 76px;
+        #a1{
+            color: #4BAA85;
         }
     </style>
 </head>
-
 <body>
-    <div class="container ">
-        <div id="er" class="yi ">
-                <button id="b1"><a href="#" id="a1">抗疫</a></button>
-                <button id="b2"><a href="#" id="a2">专栏</a></button>
-                <button id="b3"><a href="#" id="a3">热点</a></button>
+    <div class="box">
+        <div class="h1"><h2>作品</h2></div>
+        <div class="h2">
+            <a href="#" id="a1">MobileUl</a>
+            <a href="#" id="a2">网页设计</a>
+            <a href="#" id="a3">海报设计</a>
+            <a href="#" id="a4">标志设计</a>
+            <a href="#" id="a5">字体设计</a>
         </div>
-            <div class="xiam">
-                <div id="span1">天真永不消逝
-                    浪漫至死不渝
-                    徐开骋验证了“汪峰定律”，毁了自己的大好前程
-
-                </div>
-                <div id="span2">天真永不消逝
-                    浪漫至死不渝
-                    从徐开骋挽回张天爱的录音分析其台词功底扎实，有节奏
-
-                </div>
-                <div id="span3">天真永不消逝
-                    浪漫至死不渝
-                    都美竹喊话闺蜜：再不接电话，就把传票送到你们村里
-                    章子怡成“金九”大赢家！封神，一人独占四张封面
-                </div>
-            </div>
+        <div class="h3" id="l1">
+            <img src="./img/w1.png" alt="">
+            <img src="./img/w2.png" alt="">
+            <img src="./img/w3.png" alt="">
+            <img src="./img/w4.png" alt="">
+            <img src="./img/w5.png" alt="">
+            <img src="./img/w6.png" alt="">
+            <img src="./img/w7.png" alt="">
+            <img src="./img/w8.png" alt="">
         </div>
-        <script>
-            document.getElementById('a1').onclick = function () {
-                document.getElementById('span1').style.display = "block ";
-                document.getElementById('span2').style.display = "none ";
-                document.getElementById('span3').style.display = "none ";
-                document.getElementById('b1').style. backgroundColor="rgb(143, 186, 228)";
-                document.getElementById('b2').style. backgroundColor=" antiquewhite";
-                document.getElementById('b3').style. backgroundColor=" antiquewhite";
-            }
-            document.getElementById('a2').onclick = function () {
-                document.getElementById('span1').style.display = "none ";
-                document.getElementById('span3').style.display = "none ";
-                document.getElementById('span2').style.display = "block ";
-                document.getElementById('b2').style. backgroundColor="rgb(143, 186, 228)";
-                document.getElementById('b3').style. backgroundColor=" antiquewhite";
-                document.getElementById('b1').style. backgroundColor=" antiquewhite";
-            }
-            document.getElementById('a3').onclick = function () {
-                document.getElementById('span1').style.display = "none ";
-                document.getElementById('span2').style.display = "none ";
-                document.getElementById('span3').style.display = "block ";
-                document.getElementById('b3').style. backgroundColor=" rgb(143, 186, 228)";
-                document.getElementById('b2').style. backgroundColor=" antiquewhite";
-                document.getElementById('b1').style. backgroundColor=" antiquewhite";
-            }
-        </script>
+        <div class="h3" id="l2">
+            <img src="./img/w9.png" alt="">
+            <img src="./img/w10.png" alt="">
+            <img src="./img/w11.png" alt="">
+            <img src="./img/w12.png" alt="">
+            <img src="./img/w13.png" alt="">
+            <img src="./img/w14.png" alt="">
+            <img src="./img/w15.png" alt="">
+            <img src="./img/w16.png" alt="">
+        </div>
+        <div class="h3" id="l3">
+            <img src="./img/w17.png" alt="">
+            <img src="./img/w18.png" alt="">
+            <img src="./img/w19.png" alt="">
+            <img src="./img/w20.png" alt="">
+            <img src="./img/w21.png" alt="">
+            <img src="./img/w22.png" alt="">
+            <img src="./img/w23.png" alt="">
+            <img src="./img/w24.png" alt="">
+        </div>
+        <div class="h3" id="l4">
+            <img src="./img/w25.png" alt="">
+            <img src="./img/w26.png" alt="">
+            <img src="./img/w27.png" alt="">
+            <img src="./img/w28.png" alt="">
+            <img src="./img/w29.png" alt="">
+            <img src="./img/w30.png" alt="">
+            <img src="./img/w31.png" alt="">
+            <img src="./img/w32.png" alt="">
+        </div>
+        <div class="h3" id="l5">
+            <img src="./img/w33.png" alt="">
+            <img src="./img/w34.png" alt="">
+            <img src="./img/w35.png" alt="">
+            <img src="./img/w36.png" alt="">
+            <img src="./img/w37.png" alt="">
+            <img src="./img/w38.png" alt="">
+            <img src="./img/w39.png" alt="">
+            <img src="./img/w40.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var a1 = document.getElementById('a1')
+        var a2 = document.getElementById('a2')
+        var a3 = document.getElementById('a3')
+        var a4 = document.getElementById('a4')
+        var a5 = document.getElementById('a5')
+        var l1 = document.getElementById('l1')
+        var l2 = document.getElementById('l2')
+        var l3 = document.getElementById('l3')
+        var l4 = document.getElementById('l4')
+        var l5 = document.getElementById('l5')
+        a1.onclick = function(){
+            a1.style.color = '#4BAA85'
+            a2.style.color = '#000'
+            a3.style.color = '#000'
+            a4.style.color = '#000'
+            a5.style.color = '#000'
+            l1.style.display = 'block'
+            l2.style.display = 'none'
+            l3.style.display = 'none'
+            l4.style.display = 'none'
+            l5.style.display = 'none'
+        }
+        a2.onclick = function(){
+            a1.style.color = '#000'
+            a2.style.color = '#4BAA85'
+            a3.style.color = '#000'
+            a4.style.color = '#000'
+            a5.style.color = '#000'
+            l1.style.display = 'none'
+            l2.style.display = 'block'
+            l3.style.display = 'none'
+            l4.style.display = 'none'
+            l5.style.display = 'none'
+        }
+        a3.onclick = function(){
+            a1.style.color = '#000'
+            a2.style.color = '#000'
+            a3.style.color = '#4BAA85'
+            a4.style.color = '#000'
+            a5.style.color = '#000'
+            l1.style.display = 'none'
+            l2.style.display = 'none'
+            l3.style.display = 'block'
+            l4.style.display = 'none'
+            l5.style.display = 'none'
+        }
+        a4.onclick = function(){
+            a1.style.color = '#000'
+            a2.style.color = '#000'
+            a3.style.color = '#000'
+            a4.style.color = '#4BAA85'
+            a5.style.color = '#000'
+            l1.style.display = 'none'
+            l2.style.display = 'none'
+            l3.style.display = 'none'
+            l4.style.display = 'block'
+            l5.style.display = 'none'
+        }
+        a5.onclick = function(){
+            a1.style.color = '#000'
+            a2.style.color = '#000'
+            a3.style.color = '#000'
+            a4.style.color = '#000'
+            a5.style.color = '#4BAA85'
+            l1.style.display = 'none'
+            l2.style.display = 'none'
+            l3.style.display = 'none'
+            l4.style.display = 'none'
+            l5.style.display = 'block'
+        }
+    </script>
 </body>
-
 </html>
